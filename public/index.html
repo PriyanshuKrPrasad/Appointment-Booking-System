@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Appointment Booking System</h1>
+
+    <!-- User Registration Form -->
+    <h2>Register User</h2>
+    <form id="registrationForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Appointment Booking Form (Initially Hidden) -->
+    <div id="appointmentSection" style="display: none;">
+        <h2>Book Appointment</h2>
+        <form id="appointmentForm">
+            <input type="number" id="user_id" placeholder="User ID" required />
+            <input type="datetime-local" id="date" required />
+            <textarea id="description" placeholder="Services" required></textarea>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+
+    <div id="message"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
